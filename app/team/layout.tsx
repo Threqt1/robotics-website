@@ -2,11 +2,7 @@ import { CalendarOutlined, DashboardOutlined, OrderedListOutlined, TeamOutlined 
 import { Layout, Menu } from "antd/es";
 import { Content, Footer, Header } from "antd/es/layout/layout";
 
-type Prop = {
-    children?: React.ReactNode
-}
-
-export default function TeamLayoutComponent(props: Prop) {
+export default function TeamLayout({ children }: { children: React.ReactNode }) {
     return <Layout>
         <Header>
             <Menu theme="dark" className="min-w-0 flex" mode="horizontal" items={[
@@ -32,7 +28,7 @@ export default function TeamLayoutComponent(props: Prop) {
                 }
             ]} />
         </Header>
-        <Content>{props.children}</Content>
+        <Content>{children}</Content>
         <Footer className="text-center font-light">
             Katy Robotics - Krish and Kevin
         </Footer>

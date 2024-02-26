@@ -33,6 +33,7 @@ export default function TeamLayout({ children }: { children: React.ReactNode }) 
                 className="min-w-0 flex"
                 mode="horizontal"
                 onSelect={(props) => { onSelect(props.key) }}
+                selectedKeys={[Navigation.Dashboard]}
                 items={[
                     {
                         label: "Dashboard",

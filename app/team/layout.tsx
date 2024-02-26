@@ -77,7 +77,7 @@ export default function TeamLayout({ children }: { children: React.ReactNode }) 
                 </Menu>
             </div>
         </Header>
-        <Content className="p-4 flex justify-center">{children}</Content>
+        <Content className="pt-4 flex justify-center">{children}</Content>
         <Footer className="text-center font-light" color="volcano">
             Katy Robotics - Krish and Kevin
         </Footer>

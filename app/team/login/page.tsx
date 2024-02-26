@@ -13,7 +13,7 @@ export default function LoginPage() {
             size={"large"}
             className="w-full"
         >
-            <div className="w-full flex justify-left">
+            <div className="w-full">
                 <p className="text-3xl font-medium">Sign in</p>
             </div>
             <Form

@@ -28,7 +28,7 @@ export default function TeamLayout({ children }: { children: React.ReactNode }) 
         router.push(NavigationRoutes[key])
     }
 
-    return <Layout className="min-h-screen">
+    return <Layout className="h-screen">
         <Header>
             <div className="w-full flex">
                 <Menu
@@ -77,9 +77,7 @@ export default function TeamLayout({ children }: { children: React.ReactNode }) 
                 </Menu>
             </div>
         </Header>
-        <Content className="pt-4 flex justify-center">{children}</Content>
-        <Footer className="text-center font-light" color="volcano">
-            Katy Robotics - Krish and Kevin
-        </Footer>
+        <Content className="py-4 flex justify-center items-center h-max">{children}</Content>
+
     </Layout>
 }

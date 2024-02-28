@@ -7,18 +7,20 @@ import FormItem from "antd/es/form/FormItem";
 export default function LoginPage() {
     const { token: { borderRadius } } = theme.useToken()
 
-    return <div className="w-1/4 bg-white p-8" style={{ borderRadius }}>
+    return <div className="min-w-screen min-h-screen flex items-center justify-center bg-[#041527]">
         <Space
             direction="vertical"
-            size={"large"}
-            className="w-full"
+            size={40}
+            className="bg-white px-28 py-24"
+            style={{ borderRadius }}
         >
             <div className="w-full">
-                <p className="text-3xl font-medium">Sign in</p>
+                <p className="text-4xl font-medium">Sign in</p>
             </div>
             <Form
                 name="login"
-                className="w-full flex flex-col"
+                className="w-max flex flex-col gap-2"
+                size="large"
             >
                 <FormItem
                     name="username"
